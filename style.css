@@ -1,0 +1,116 @@
+body{
+    background:linear-gradient(20deg,#ea00d9 ,10%,#091833);
+    background-attachment: fixed;
+    width:99vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width:50%;
+    margin:5% 0;
+}
+
+table{
+    width:50vw;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    color:white;
+    height:40px;
+    width:20%;
+}
+
+tr{
+    opacity:0;
+    animation:anim 1s var(--delay) ease-out forwards;
+}
+
+.even{
+    background:linear-gradient(90deg,#133e7c,rgba(0,0,0,0));
+}
+
+.odd{
+    background:linear-gradient(90deg,#0abdc6,rgba(0,0,0,0));
+}
+
+form{
+    width:max-content;
+    border:solid 1px #0abdc6;
+    border-radius: 20px;
+    padding:30px 20px 20px 20px;
+    margin:0 0 5%;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    width:200px;
+    height:50px;
+    background-color: transparent;
+    border:solid 1px #0abdc6;
+    outline: none;
+    color:#0abdc6;
+    border-radius: 20px;
+    padding:0 20px;
+}
+
+button{
+    width:100%;
+    height:50px;
+    outline: none;
+    color:#0abdc6;
+    border-radius: 20px;
+    border:solid 1px #0abdc6;
+    padding:0 20px;
+    margin:20px 0;
+    background-color: transparent;
+    font-size: larger;
+    font-family: monospace;
+    transition:0.5s;
+}
+
+button:hover{
+    border:solid 1px #ffffff;
+    color:white;
+    
+}
+
+label{
+    margin:10px 20px 0 10px;
+    font-size: larger;
+    font-family: monospace;
+    color:#0abdc6;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+@keyframes anim{
+    from{
+        transform: translateX(-50px);
+    }
+
+    to{
+        opacity:1;
+    }
+}
